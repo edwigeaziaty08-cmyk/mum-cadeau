@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pour maman ❤️</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- PAGE D'ACCUEIL -->
+
+    <div id="accueil">
+
+        <h1>Maman, j’ai une petite question pour toi...</h1>
+
+        <p>Tu veux commencer ?</p>
+
+        <button id="oui"
+            onclick="document.getElementById('accueil').style.display='none'; document.getElementById('question').style.display='block';">
+            Oui
+        </button>
+
+        <button id="non" onclick="boutonNonAccueil()">
+            Non
+        </button>  
+    </div>
+
+
+    <!-- QUESTIONS -->
+
+    <div id="question" style="display: none;">
+
+        <h1 id="titreQuestion">Petite question ❤️</h1>
+
+        <p id="texteQuestion">
+            Maman, tu penses qu’il faut toujours croire en ses rêves ?
+        </p>
+
+        <button id="reponseOui">Oui</button>
+        <button id="reponseNon">Non</button>
+
+        <br>
+
+        <button id="continuer" disabled>Continuer</button>
+    </div>
+
+
+    <!-- MESSAGE FINAL -->
+
+    <!-- MESSAGE FINAL -->
+
+<div id="final" style="display: none;">
+    <div id="coeurs"></div>
+
+    <h1>Maman ❤️</h1>
+
+    <p class="message-final">
+        Peu importe les épreuves, les doutes ou les moments difficiles,
+        n’oublie jamais de croire en toi et de continuer à avancer.
+    </p>
+
+    <p class="message-final">
+        Tu as donné tellement d’amour autour de toi.
+        Aujourd’hui, je voulais simplement te rappeler
+        que toi aussi, tu mérites de recevoir tout cet amour.
+    </p>
+
+    <h2>Je t’aime très fort, maman. ❤️</h2>
+
+    <p>
+        Ceci est juste une petite surprise pour toi...
+    </p>
+
+    <div id="photos">
+
+    <img src="photos/photo1.jpg" alt="Photo avec maman">
+
+    <img src="photos/photo2.jpg" alt="Photo avec maman">
+
+    <img src="photos/photo3.jpg" alt="Photo avec maman">
+
+</div>
+
+</div>
+<audio id="musique" loop>
+    <source src="musique/maman.mp3" type="audio/mpeg">
+</audio>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
